@@ -1,4 +1,3 @@
-
 {
   "name": "fs-open",
   "version": "1.0.0",
@@ -10,12 +9,13 @@
     "calculate": "ts-node calculator.ts",
     "calculateBmi": "ts-node bmiCalculator.ts",
     "calculateExercises": "ts-node exerciseCalculator.ts"
-  
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.14",
     "ts-node": "^10.5.0",
-    "typescript": "^4.5.5"
+    "typescript": "^4.9.4"
   }
 }

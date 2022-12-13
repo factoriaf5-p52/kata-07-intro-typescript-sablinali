@@ -9,20 +9,24 @@
 
 // console.log(calculateBmi(a, b));
 
-const calculateBmi = (height: number, weight: number): string => {
-    let result = weight / ((height / 100)** 2);
-    if (result < 18.4){
+
+export function bmiCalculator(){}
+
+let calculateBmi = (height: number, weight: number): string => {
+    let bmi = weight / ((height / 100)** 2);
+    //let bmi = weight / (height * height);
+    if (bmi < 18.4){
         return "underweight"
     }
-    if (result >= 18.4 && result <= 24.9){
+    if (bmi >= 18.4 && bmi <= 24.9){
         return "normal"
     }
-    if (result >= 25 && result <= 29.9){
+    if (bmi >= 25 && bmi <= 29.9){
         return "overweight"
     }
-    if (result >= 30){
+    if (bmi >= 30){
         return "obese"
     }
 }
-console.log(calculateBmi(156, 49.5))
+console.log(calculateBmi(156, 50))
 
